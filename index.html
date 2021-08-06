@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Vasili</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <!--INICIO HEADER-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"></a>
+          <img src="imagenes/Kandinsky-autógrafo-1.jpg" alt="" width="70" height="60">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/Biografía.html">Biografía</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/Comienzos.html">Comienzos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/HaciaAbstracción.html">Hacia La Abstracción</a>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/Bauhaus.html">Bauhaus</a>  
+              </li>
+            </ul>
+          </div>
+      </nav> 
+    </header>
+    <!--FIN HEADER-->
+    
+    <!--TITULO PRINCIPAL DEL SITIO-->
+    <div>
+      <h1 class="animate__animated animate__fadeInDown"> Vasili Kandinsky </h1>
+    </div>
+
+    <main>
+    <section>
+    <!--CAROUSEL CON OBRAS DEL ARTISTA-->
+        <div class="container">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/Amarillo Rojo Azul 1.jpg" class="imgCarousel" alt="Amarillo Rojo Azul">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/Intersecting-Lines-1923-1.jpg" class="imgCarousel" alt="Intersecting-Lines-1923-1">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/In-the-Blue-1.jpg" class="imgCarousel" alt="In In-the-Blue-1">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        
+        <!--Presentación del sitio y del artista con link de acceso a la biografía-->
+        <p>Sitio web dedicado al artista Vasili Kandinsky. Artista que dedicó su vida al desarrollo de la pintura hacia la abstracción,
+        revolucionando el arte de nuestro siglo con un nuevo lenguaje pictórico. <br> Te invitamos a conocer más sobre su <a href="pages/Biografía.html">biografía</a></p>
+    </section>
+    
+    <section class="section2">
+        <!--Pensado para mostrar 3 aspectos principales de la carrera del artista con links de acceso a las demás secciones del sitio-->
+        <div class="container">
+            <a href="pages/Comienzos.html"><h3 class="animate__animated animate__fadeInDown">Comienzos</h3></a>
+            <img src="imagenes/Odessa Puerto 1.jpg" class= "img-fluid" alt="Odessa Puerto">
+            <p><strong>Odesa - Puerto 1</strong>, hacia 1898 (Oleo sobre lienzo, 65x45 cm).<br>
+            El joven Kandinsky no se atreve a seguir de inmediato la carrera artística. El arte le parece inalcanzable.</p>
+        </div>
+        <div class="container">
+            <a href="pages/HaciaAbstracción.html"><h3 class="animate__animated animate__fadeInDown">Hacia la Abstracción</h3></a>
+            <img src="imagenes/Murnau casas Obermarkt 1.jpg" class="img-fluid" alt="Murnau Obermarkt">
+            <p><strong>Murnau, Casas en el Obermark</strong>, 1908 (Oleo sobre cartón, 64,5x50,2 cm).<br>
+            El color, el sonido y la palabra deben actuar en conjunto sin ser filtrados por el entendimiento.</p>
+        </div>
+        <div class="container">
+            <a href="pages/Bauhaus.html"><h3 class="animate__animated animate__fadeInDown">Bauhaus</h3></a>
+            <img src="imagenes/Bauhaus Portada 1.jpg" class="img-fluid" alt="Bauhaus">
+            <p><strong>Pequeños Mundos I-VI</strong> 1922 (Cromolitografía sobre papel de tina, 36x28 cm).<br>
+            Su aptitud pedagógica y sus teorías artísticas, hicieron de Kandinsky uno de los profesores más apropiados de esta escuela renovadora.</p>
+        </div>
+    </section>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <div>
+            <h6>@ 2021 Fundación Vasili Kandinsky Argentina</h6>
+        </div>
+
+        <div class="footerRedes">
+        <a class="footerLinks" href="https://www.instagram.com/">
+            <img src="imagenes/Instagram 1.jpg" alt="Link Instagram">
+        </a>
+      
+        <a class="footerLinks" href="https://www.facebook.com/">
+            <img src="imagenes/Facebook_icon 1.jpg" alt="Link Facebook">
+        </a>
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>    
+</html>

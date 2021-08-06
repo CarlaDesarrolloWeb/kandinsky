@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+main {
+  margin: 30px; }
+
+/* ESTILO HEADER */
+.header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px; }
+
+.headerMenu {
+  width: 100%;
+  margin-right: 400px; }
+  .headerMenu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%; }
+    .headerMenu ul li {
+      width: 25%;
+      text-align: center;
+      font-size: 16px;
+      font-family: "Noto Sans", sans-serif;
+      font-weight: bold;
+      list-style-type: none;
+      padding: 14px;
+      margin-top: none; }
+
+/* ESTILO PARA TITULOS, TEXTO y LISTAS*/
+a {
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  text-transform: uppercase; }
+
+h1 {
+  font-family: "Noto Sans", sans-serif;
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-size: 40px; }
+
+h2 {
+  color: #4003a1;
+  font-family: "Noto Sans", sans-serif;
+  height: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px; }
+
+h3 {
+  color: #4003a1;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold; }
+
+p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  text-align: center; }
+
+/* GRID */
+.mainGrid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 60% auto;
+  row-gap: 15px;
+  grid-template-areas: "section1" "section2"; }
+
+/*ESTILO PARA INDEX*/
+.section1index {
+  grid-area: "section1";
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center; }
+  .section1index p {
+    width: 60%;
+    padding-left: 5px;
+    padding-top: 2em;
+    height: 5em;
+    text-align: center; }
+
+/* ESTILO PARA DIV DENTRO DE SECTION */
+.section2 {
+  grid-area: "section2";
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding-top: 70px; }
+  .section2 div {
+    text-align: center;
+    box-shadow: 3px 3px 3px #747474; }
+  .section2 p {
+    padding: 0 2em; }
+
+/*ESTILO PARA PAGE BIOGRAFIA*/
+.section1 {
+  grid-area: "section1";
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  align-items: left;
+  text-align: center;
+  background-position: center; }
+
+@media only screen and (max-width: 1200px) {
+  .section1 {
+    flex-direction: column;
+    align-items: center; } }
+
+.bg-primary {
+  background-image: linear-gradient(#e2dede, #ebebeb) !important; }
+
+.badge {
+  display: flex;
+  padding: .35em .65em;
+  font-size: 13px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 70;
+  line-height: 1.3;
+  color: black;
+  text-align: justify;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .05rem;
+  flex-direction: row; }
+
+.section1 img {
+  padding: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  height: 395px;
+  background-image: linear-gradient(#cecbcb, #ebebeb); }
+
+.section1 p {
+  padding-top: 2em;
+  padding-right: 1em; }
+
+/*ESTILO PARA DIV CON DATOS DE OBRAS DEL ARTISTA*/
+.datosObras1, .datosObras2, .datosObras3 {
+  font-family: "Noto Sans", sans-serif;
+  color: black;
+  font-size: 11px;
+  line-height: 15pt;
+  text-align: center;
+  padding: 3px;
+  background-color: blanchedalmond; }
+  .datosObras1 ul, .datosObras2 ul, .datosObras3 ul {
+    list-style-type: none; }
+
+/*EXTEND PARA APLICAR MODIFICACIONES EN LOS DATOS DE OBRAS DEL ARTISTA*/
+.datosObras2 {
+  background-color: #bbd1c8; }
+
+.datosObras3 {
+  background-color: #cacaca; }
+
+/*ESTILO PAGE COMIENZOS*/
+.section1Comienzos p {
+  text-align: center;
+  background-image: linear-gradient(#c0bfbf, #e9e9e9);
+  background-position: center;
+  padding: 0.5em; }
+
+/*MIXINS PARA PAGES COMIENZOS, HACIA LA ABSTRACCION Y BAUHAUS*/
+.obrasComienzos {
+  font-family: "Noto Sans", sans-serif;
+  color: black;
+  font-size: 11px;
+  line-height: 15pt;
+  text-align: center;
+  padding: 3px;
+  background-color: #d4d3d3; }
+  .obrasComienzos ul {
+    list-style-type: none; }
+
+.obrasBauhaus {
+  font-family: "Noto Sans", sans-serif;
+  color: white;
+  font-size: 12px;
+  line-height: 15pt;
+  text-align: center;
+  padding: 3px;
+  background-color: #1d1c1c; }
+  .obrasBauhaus ul {
+    list-style-type: none; }
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 492px) {
+  .imgCarousel {
+    width: 300px;
+    height: 189px;
+    padding-left: 35px;
+    padding-bottom: 15px; } }
+
+@media only screen and (max-width: 540px) {
+  .imgCarousel {
+    width: 400px;
+    height: 252px;
+    padding-left: 45px;
+    padding-bottom: 15px; } }
+
+@media only screen and (max-width: 600px) {
+  .imgCarousel {
+    width: 450px;
+    height: 285px;
+    padding-bottom: 15px; }
+  .obrasComienzos img {
+    height: 210px;
+    width: 210px; }
+  .obrasBauhaus img {
+    height: 250px;
+    width: 250px; } }
+
+@media only screen and (max-width: 768px) {
+  .imgCarousel {
+    width: 500px;
+    height: 316px;
+    padding-bottom: 15px; }
+  .section2 {
+    flex-direction: column; }
+  h3 {
+    font-size: 15px;
+    margin-top: 15px; } }
+
+@media only screen and (min-width: 992px) {
+  .imgCarousel {
+    padding-left: 125px;
+    padding-bottom: 15px; }
+  .section2 div:hover img {
+    height: 280px; }
+  .badge {
+    display: flex;
+    padding: .35em .65em;
+    font-size: 14px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 300; } }
+
+@media only screen and (max-width: 992px) {
+  .imgCarousel {
+    padding-bottom: 15px; }
+  h3 {
+    font-size: 15px; } }
+
+@media only screen and (min-width: 1200px) {
+  .imgCarousel {
+    padding-left: 200px;
+    padding-bottom: 15px; } }
+
+@media only screen and (min-width: 1400px) {
+  .imgCarousel {
+    padding-left: 300px;
+    padding-bottom: 15px; } }
+
+/* FOOTER */
+h6 {
+  font-size: 10px;
+  font-family: "Noto Sans", sans-serif;
+  color: gray;
+  text-align: center;
+  padding-top: 60px; }
+
+.footerRedes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px; }
+
+.footerLinks {
+  padding-right: 5px; }
